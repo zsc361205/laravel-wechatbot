@@ -1,10 +1,10 @@
 <?php
 
-namespace Mango\LaravelWechat;
+namespace Mango\LaravelWeChatbot;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelWechatServiceProvider extends ServiceProvider
+class LaravelWeChatServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -27,7 +27,7 @@ class LaravelWechatServiceProvider extends ServiceProvider
     {
         // 发布配置文件
         $this->publishes([
-            __DIR__.'/../config/laravel-wechat.php' => config_path('laravel-wechat.php'),
+            __DIR__ . '/../config/laravel-wechat.php' => config_path('laravel-wechat.php'),
         ]);
     }
 }

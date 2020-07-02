@@ -9,5 +9,20 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+    },
+    "autoload": {
+        "files": [
+        ],
+        "psr-4": {
+            "Mango\\LaravelWeChatBot\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mango\\LaravelWeChatbot\\LaravelWeChatServiceProvider"
+            ]
+        }
+    }
 }

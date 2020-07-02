@@ -1,0 +1,13 @@
+{
+    "name": "mango/laravel-wechatbot",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zsc",
+            "email": "381627192@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

@@ -15,7 +15,7 @@
         "files": [
         ],
         "psr-4": {
-            "Mango\\LaravelWeChatBot\\": "src/"
+            "Mango\\LaravelWeChatbot\\": "src/"
         }
     },
     "extra": {

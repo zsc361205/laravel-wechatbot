@@ -52,7 +52,7 @@ class LaravelWeChatServiceProvider extends ServiceProvider
     public function registerConfigure()
     {
         $this->publishes([
-            $this->getConfigFile() => config_path('laravel-wechat.php'),
+            $this->getConfigFile() => config_path('wechatbot.php'),
         ]);
     }
 

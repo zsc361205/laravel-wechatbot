@@ -1,10 +1,11 @@
 <?php
 
 
-namespace Mango\LaravelWechatbot\Message;
+namespace Mango\LaravelWeChatbot\Message;
 
 
 use Carbon\Carbon;
+use Illuminate\Support\Facades\App;
 
 abstract class Message
 {
@@ -74,7 +75,9 @@ abstract class Message
      */
     private function setFrom()
     {
-        $this->from = vbot('contacts')->getAccount($this->raw['FromUserName']);
+        
+        App::make('contacts')->getAccount($this->raw['FromUserName']);
+        $this->from = App('contacts')->getAccount($this->raw['FromUserName']);
     }
 
     private function setFromType()

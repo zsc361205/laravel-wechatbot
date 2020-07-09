@@ -6,7 +6,7 @@
  * Time: 16:03.
  */
 
-namespace Mango\LaravelWechatbot\Message;
+namespace Mango\LaravelWeChatbot\Message;
 
 
 interface MessageInterface

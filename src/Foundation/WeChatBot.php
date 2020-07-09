@@ -15,7 +15,8 @@ class WeChatBot
 
     public function Index()
     {
-        $e = App::make('apiSend');
+        $e = App::make('friends');
+        $e->app;
         echo('这就是传说中的？');
     }
 

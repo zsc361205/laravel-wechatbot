@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Mango\LaravelWechatbot\Message\Traits;
+namespace Mango\LaravelWeChatbot\Message\Traits;
 
 
 use Hanson\Vbot\Message\Text;
@@ -14,7 +14,7 @@ trait SendMsg
     protected static function sendMsg($msg)
     {
         $data = [
-            'BaseRequest' => Config::get('server.baseRequest'),
+            'BaseRequest' => Config::get('laravel-wechat.server.baseRequest'),
             'Msg' => $msg,
             'Scene' => 0,
         ];
@@ -23,7 +23,8 @@ trait SendMsg
             son_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES), true
         );
         static::stopSync();
-        sleep(1);
+        $sleepTime = Config::get('laravel-wechat.server.sleep');
+        sleep($sleepTime);
       return ApiHandler::handle($result);
     }
 

@@ -4,11 +4,12 @@
 namespace Mango\LaravelWeChatbot\Providers;
 
 
+use Illuminate\Support\ServiceProvider;
 use Mango\LaravelWeChatbot\Api\ApiHandler;
 use Mango\LaravelWeChatbot\Api\Search;
 use Mango\LaravelWeChatbot\Api\Send;
 
-class ApiServiceProvider
+class ApiServiceProvider extends ServiceProvider
 {
     /**
      * Register services.

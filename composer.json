@@ -25,7 +25,7 @@
             "providers": [
                 "Mango\\LaravelWeChatbot\\LaravelWeChatServiceProvider",
                 "Mango\\LaravelWeChatbot\\Providers\\ApiServiceProvider",
-                "*"
+                "Mango\\LaravelWeChatbot\\Providers\\ContactServiceProvider"
             ]
         }
     }

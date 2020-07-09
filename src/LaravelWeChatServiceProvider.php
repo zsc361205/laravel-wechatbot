@@ -61,6 +61,6 @@ class LaravelWeChatServiceProvider extends ServiceProvider
      */
     protected function getConfigFile(): string
     {
-        return __DIR__ . DIRECTORY_SEPARATOR . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'laravel-wechat.php';
+        return __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'laravel-wechat.php';
     }
 }

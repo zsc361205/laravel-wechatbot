@@ -23,7 +23,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mango\\LaravelWeChatbot\\LaravelWeChatServiceProvider"
+                "Mango\\LaravelWeChatbot\\LaravelWeChatServiceProvider",
+                "Mango\\LaravelWeChatbot\\Providers\\ApiServiceProvider"
             ]
         }
     }

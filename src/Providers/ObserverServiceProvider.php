@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Mango\LaravelWechatbot\Providers;
+namespace Mango\LaravelWeChatbot\Providers;
 
 
 class ObserverServiceProvider

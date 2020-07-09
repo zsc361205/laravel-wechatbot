@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Mango\LaravelWechatbot\Api;
+namespace Mango\LaravelWeChatbot\Api;
 
 
 class Send
